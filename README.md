@@ -8,6 +8,6 @@
     * [Ventoy](https://www.ventoy.net/en/download.html)
 
 ## Set Keyboard layout
-'''
-loadkeys br-abnt2
-'''
+```
+# loadkeys br-abnt2
+```
