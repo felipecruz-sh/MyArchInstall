@@ -39,3 +39,10 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 # mkfs.ext4 /dev/sdd2
 # mkfs.ext4 /dev/sdd3
 ```
+
+### Mount the file systems
+```
+mount /dev/sdd2 /mnt
+mount --mkdir /dev/sdd1 /mnt/boot/efi
+mount --mkdir /dev/sdd3 /mnt/home
+```
