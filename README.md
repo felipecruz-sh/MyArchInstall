@@ -29,6 +29,7 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 ```
 
 | Device    | Mount         | Size  | Type              |
+| :--:      | :----------:  | :--:  | -------------:    |
 | /dev/sdd1 | `/boot/efi`   | 1G    | EFI System        |
 | /dev/sdd2 | `/`           | 50G   | Linux root (ext4) |
 | /dev/sdd3 | `/home`       | 187.5 | Linux home (ext4) |
