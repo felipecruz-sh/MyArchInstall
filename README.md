@@ -88,12 +88,12 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 
 ### Network
 ```sh
-echo hostname > /etc/hostname
+# echo hostname > /etc/hostname
 
-cat > /etc/hosts << EOF
-127.0.0.1   localhost.localdomain   localhost
-::1         localhost.localdomain   localhost
-127.0.0.1   hostname.localdomain    hostname
+# cat > /etc/hosts << EOF
+    127.0.0.1   localhost.localdomain   localhost
+    ::1         localhost.localdomain   localhost
+    127.0.0.1   hostname.localdomain    hostname
 EOF
 ```
 
