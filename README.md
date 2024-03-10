@@ -6,3 +6,8 @@
     * [Rufus](https://rufus.ie) 
     * [balenaEtcher](https://etcher.balena.io/#download-etcher) 
     * [Ventoy](https://www.ventoy.net/en/download.html)
+
+## Set Keyboard layout
+'''
+loadkeys br-abnt2
+'''
