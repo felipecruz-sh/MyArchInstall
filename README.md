@@ -88,11 +88,30 @@ mount --mkdir /dev/sdd3 /mnt/home
 
 ### Network
 ```
-echo hyprarch > /etc/hostname
+echo hostname > /etc/hostname
 
 cat > /etc/hosts << EOF
 127.0.0.1   localhost.localdomain   localhost
 ::1         localhost.localdomain   localhost
-127.0.0.1   hyprarch.localdomain    hyprarch
+127.0.0.1   hostname.localdomain    hostname
 EOF
+```
+
+### Root password
+```
+# passwd
+```
+
+### Standard User
+```
+useradd -mG wheel username
+
+passwd
+```
+
+### Boot loader
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch --recheck
+
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
