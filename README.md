@@ -46,3 +46,26 @@ mount /dev/sdd2 /mnt
 mount --mkdir /dev/sdd1 /mnt/boot/efi
 mount --mkdir /dev/sdd3 /mnt/home
 ```
+
+### Install essential packages
+```
+# pacstrap -K /mnt base linux linux-firmware nano networkmanager grub grub-efi-x86_64 efibootmgr
+```
+
+### Fstab
+```
+# genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+### Chroot
+```
+# arch-chroot /mnt
+```
+
+### Time
+```
+# ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+
+# hwclock --systohc
+```
+
