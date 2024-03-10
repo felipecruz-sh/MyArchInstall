@@ -44,11 +44,11 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 
 ### Mount the file systems
 ```sh
-mount /dev/sdd2 /mnt
+# mount /dev/sdd2 /mnt
 
-mount --mkdir /dev/sdd1 /mnt/boot/efi
+# mount --mkdir /dev/sdd1 /mnt/boot/efi
 
-mount --mkdir /dev/sdd3 /mnt/home
+# mount --mkdir /dev/sdd3 /mnt/home
 ```
 
 ### Install essential packages
