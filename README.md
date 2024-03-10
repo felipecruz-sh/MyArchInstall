@@ -83,4 +83,16 @@ mount --mkdir /dev/sdd3 /mnt/home
 
 # export LANG=en_US.UTF-8
 
-# echo KEYMAP=br-abnt2 >> /etc/vconsole.conf
+# echo KEYMAP=br-abnt2 > /etc/vconsole.conf
+```
+
+### Network
+```
+echo hyprarch > /etc/hostname
+
+cat > /etc/hosts << EOF
+127.0.0.1   localhost.localdomain   localhost
+::1         localhost.localdomain   localhost
+127.0.0.1   hyprarch.localdomain    hyprarch
+EOF
+```
