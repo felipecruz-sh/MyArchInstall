@@ -33,3 +33,14 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 | /dev/sdd1 | `/boot/efi`   | 1G    | EFI System        |
 | /dev/sdd2 | `/`           | 50G   | Linux root (ext4) |
 | /dev/sdd3 | `/home`       | 187.5 | Linux home (ext4) |
+
+### Format partitions
+```
+# mkfs.fat -F32 /dev/sdd1
+```
+```
+mkfs.ext4 /dev/sdd2
+```
+```
+mkfs.ext4 /dev/sdd3
+```
