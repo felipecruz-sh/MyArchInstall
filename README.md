@@ -102,7 +102,7 @@ EOF
 # passwd
 ```
 
-### Standard User
+### Admin User
 ```
 useradd -mG wheel username
 
