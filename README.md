@@ -73,3 +73,14 @@ mount --mkdir /dev/sdd3 /mnt/home
 # hwclock --systohc
 ```
 
+### Localization
+```
+# sed -i '/en_US/,+1 s/^#//' /etc/locale.gen
+
+# locale-gen
+
+# echo LANG=en_US.UTF-8 > /etc/locale.conf
+
+# export LANG=en_US.UTF-8
+
+# echo KEYMAP=br-abnt2 >> /etc/vconsole.conf
