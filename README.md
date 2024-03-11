@@ -75,7 +75,7 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 
 ### Localization
 ```sh
-# sed -i '/en_US/,+1 s/^#//' /etc/locale.gen
+# sed -i '/en_US.UTF-8/ s/^#//' /etc/locale.gen
 
 # locale-gen
 
