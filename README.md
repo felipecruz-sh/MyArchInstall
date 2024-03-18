@@ -53,7 +53,7 @@ If the command returns 64, then system is booted in UEFI mode and has a 64-bit x
 
 ### Install essential packages
 ```sh
-# pacstrap -K /mnt base linux linux-firmware nano networkmanager grub grub-efi-x86_64 efibootmgr
+# pacstrap -K /mnt base linux-lts linux-firmware nano networkmanager grub grub-efi-x86_64 efibootmgr
 ```
 
 ### Generate Fstab
